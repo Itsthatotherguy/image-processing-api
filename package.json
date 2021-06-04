@@ -7,6 +7,7 @@
     "prebuild": "rimraf dist/ && rimraf src/assets/thumb/ && copyfiles -u 1 src/assets/**/*.jpg dist/",
     "build": "npx tsc",
     "prestart": "npm run build",
+    "start": "node dist/app.js",
     "start:dev": "nodemon",
     "pretest": "npm run build",
     "test": "jasmine",
